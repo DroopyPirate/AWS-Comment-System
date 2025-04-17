@@ -69,3 +69,25 @@ This folder contains the static website files (HTML, CSS, JavaScript) for the se
    - Under **Error document**, you can also enter `index.html` (optional).
 8. Click **Save**.
 9. Access your website using the **Endpoint** URL provided in the Static Website Hosting section.
+
+
+
+## 🔗 Connect Frontend to API Gateway
+
+Do this step after deploying the backend (API Gateway + Lambda).
+1. Open the `script.js` file in the `frontend` folder.
+2. Find the line where the API Gateway URL is defined. It should look like this:
+
+   ```javascript
+   const apiUrl = "https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>/comments";
+   ```
+3. Replace `<your-api-id>`, `<region>`, and `<stage>` with the actual values from your API Gateway deployment.
+    - `<your-api-id>`: The ID of your API Gateway. You can find this in the API Gateway console under your API's settings.
+    - `<region>`: The AWS region where your API is deployed (e.g., `us-east-1`).
+    - `<stage>`: The stage name you used when deploying the API (e.g., `prod` or `dev`).
+4. Save the changes to `script.js`.
+5. Upload the updated `script.js` file to your S3 bucket, replacing the old version.
+6. Refresh your website in the browser to see the changes.
+7. Test the comment system by submitting, fetching, and deleting comments.
+8. If everything works, congratulations! You have successfully deployed the frontend of the AWS Comment System.
+9. If you encounter any issues, check the browser console for errors and ensure that the API Gateway is correctly configured to allow CORS requests from your S3 bucket.

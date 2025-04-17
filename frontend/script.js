@@ -1,4 +1,4 @@
-const apiEndpoint = 'https://<api-id>.execute-api.<region-name>.amazonaws.com/prod/comments'; // Replace with your actual API endpoint
+const apiEndpoint = "https://<your-api-id>.execute-api.<region>.amazonaws.com/<stage>/comments"; // Replace with your actual API endpoint
 
 // Function to fetch and display comments
 async function fetchComments() {
