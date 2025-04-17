@@ -30,3 +30,6 @@ aws-comment-system/
 ├── backend/       # Lambda function code, API Gateway, DynamoDB and README for detailed steps
 ├── docs/          # Detailed Steps for setting up 0 budget and in what order steps to follow
 └── assets/        # Diagrams, screenshots
+
+---
+Go to [docs/Instructions.md](./docs/Instructions.md) for detailed setup instructions.
