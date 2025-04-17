@@ -26,7 +26,7 @@ A fully serverless web app built with:
 
 ```bash
 aws-comment-system/
-├── frontend/      # S3 static website files
-├── backend/       # Lambda function
-├── docs/          # Detailed Steps
+├── frontend/      # S3 static website files and README for detailed steps
+├── backend/       # Lambda function code, API Gateway, DynamoDB and README for detailed steps
+├── docs/          # Detailed Steps for setting up 0 budget and in what order steps to follow
 └── assets/        # Diagrams, screenshots
