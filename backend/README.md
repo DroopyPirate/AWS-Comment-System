@@ -12,7 +12,7 @@ This folder contains everything you need to configure the **UserComments** Dynam
 
 ---
 
-## 1. Create the DynamoDB Table
+## Step 1: Create the DynamoDB Table
 
 1. Open the [DynamoDB Console](https://console.aws.amazon.com/dynamodb).  
 2. Click **Create table**.  
@@ -26,7 +26,7 @@ This folder contains everything you need to configure the **UserComments** Dynam
 
 ---
 
-## 2. Create the Lambda Function
+## Step 2: Create the Lambda Function
 
 1. Open the [Lambda Console](https://console.aws.amazon.com/lambda).  
 2. Click **Create function** → **Author from scratch**.  
@@ -40,7 +40,7 @@ This folder contains everything you need to configure the **UserComments** Dynam
 
 ---
 
-## 3. Configure the Lambda Function
+## Step 3: Configure the Lambda Function
 
 ### 3.1. Add DynamoDB Permissions
 
@@ -189,7 +189,7 @@ Browsers send an OPTIONS request before actual GET/POST/DELETE calls to check CO
 
 ---
 
-## 5. Set Up API Gateway Trigger in AWS Lambda
+## Step 5: Set Up API Gateway Trigger in AWS Lambda
 
 1. In the Lambda designer, click **+ Add trigger**.
 2. Select source as **API Gateway**.
