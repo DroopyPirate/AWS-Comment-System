@@ -91,3 +91,8 @@ Do this step after deploying the backend (API Gateway + Lambda).
 7. Test the comment system by submitting, fetching, and deleting comments.
 8. If everything works, congratulations! You have successfully deployed the frontend of the AWS Comment System.
 9. If you encounter any issues, check the browser console for errors and ensure that the API Gateway is correctly configured to allow CORS requests from your S3 bucket.
+
+---
+## 📣 Accessing Your Live Site
+Once deployed, your site is publicly available at: ` http://<your-bucket-name>.s3-website-<region>.amazonaws.com `
+- Example: `http://my-comment-system-frontend.s3-website-us-east-1.amazonaws.com`
